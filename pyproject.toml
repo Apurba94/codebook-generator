@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codebook-generator"
+version = "0.1.0"
+description = "Generate a Markdown/HTML data dictionary (codebook) from a CSV dataset."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+codebook-generator = "codebook_generator.cli:main"
+
+[tool.setuptools]
+packages = ["codebook_generator"]
